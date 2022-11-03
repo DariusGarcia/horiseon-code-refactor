@@ -2,12 +2,15 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
+    /* removes default browser set margin and padding */
 }
 
 body {
     background-color: #d9dcd6;
 }
 
+/* different font for the header */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,6 +18,7 @@ body {
     color: #ffffff;
 }
 
+/* inline-block display for the heading h1 to allow inline flow*/
 .header h1 {
     display: inline-block;
     font-size: 48px;
@@ -24,6 +28,8 @@ body {
     color: #d9dcd6;
 }
 
+/* places div in the upper right corner of the page, centered in the navbar
+also has different font family */
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,15 +38,19 @@ body {
     font-size: 20px;
 }
 
+/* removed the bullet points from the unordered list*/
 .header div ul {
     list-style-type: none;
 }
 
+/* space between the different links,
+placing them inline with in each other on the same axis*/
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* removed the link underline */
 a {
     color: #ffffff;
     text-decoration: none;
@@ -50,6 +60,7 @@ p {
     font-size: 16px;
 }
 
+/* make the hero image cover the entire page in the center.*/
 .hero {
     height: 800px;
     width: 100%;
@@ -69,12 +80,15 @@ p {
     margin-left: 25px;
 }
 
+/* have the main content only be 75% viewport width */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* places the benefits section to the right of the other content section on desktop. 
+only 20% of the total viewport width */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,55 +100,26 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+.benefit-lead, .benefit-brand, .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* places the headings in the center of the parent container div */
+.benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* makes the images stock on top of each other with display block 
+margin 10px for top and bottom, auto for left and right */
+.benefit-lead img, .benefit-brand img, .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+#search-engine-optimization, #online-reputation-management, #social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,51 +128,17 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/* image can't be bigger than 200px*/
+#search-engine-optimization img, #online-reputation-management img, #social-media-marketing img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+#search-engine-optimization h2, #online-reputation-management h2, #social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* places the text in the center of the parent container div */
 .footer {
     padding: 30px;
     clear: both;
