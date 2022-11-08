@@ -1,4 +1,6 @@
 # Module 1 Challenge - Horiseon website
+
+[link to deployed app](https://dariusgarcia.github.io/module1-horiseon-code-refactor/)
 ## Description
 This web application was created to for a company called Horiseon who specializes in Google Search Optimization. The code was refactored to meet accessibility standards. Alt attributes were added to image tags and and headings were organized in order. 
 
